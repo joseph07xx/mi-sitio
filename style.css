@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #0055aa;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cuadro-hover {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 3px solid transparent;
+      border-radius: 10px;
+      transition: all 0.4s ease;
+      background-color: transparent;
+      color: #003366;
+    }
+
+    .cuadro-hover:hover {
+      border-color: #0055aa;
+      background-color: #cce0ff;
+      color: #001f4d;
+      box-shadow: 0 0 10px rgba(0, 85, 170, 0.4);
+    }
+
+h2 {
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+p, ul {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.imagen {
+  text-align: center;
+}
+
+.imagen img {
+  display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  main {
+    margin: 20px;
+    padding: 15px;
+  }
+
+/*nuevo*/
+}
+.galeria {
+  margin-top: 40px;
+}
+
+.contenedor-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contenedor-fotos img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 85, 170, 0.4);
+}
+
+.contenedor-fotos img:hover {
+  filter: grayscale(30%);
+  transform: scale(1.05);
+}
